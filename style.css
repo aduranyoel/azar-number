@@ -1,0 +1,67 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: #348F50; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#result {
+    color: #fff;
+    font-size: 10rem;
+    letter-spacing: 1rem;
+    display: flex;
+    column-gap: 5rem;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5rem;
+}
+
+#result span {
+    background: rgba(0,0,0,0.5);
+    border-radius: 1rem;
+    padding: 0 2rem;
+}
+
+.btn, .actions-container input {
+    padding: 0.5rem 1rem;
+    border: #56B4D3 1px solid;
+    background: transparent;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.9);
+    animation: background ease-in-out 1.5s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #348F50;
+}
+
+.actions-container {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 3rem;
+    justify-content: center;
+    column-gap: 1rem;
+}
